@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <title>Trivia Generator</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+</head>
+<body>
+  <div class="container">
+    <h1>Trivia Generator</h1>
+    <div>
+        <label for="category">Categoría:</label>
+        <select id="category">
+          <option value="any">Cualquier categoría</option>
+          <option value="9">General Knowledge</option>
+          <option value="10">Books</option>
+          <option value="11">Film</option>
+
+        </select>
+      </div>
+      <div>
+        <label for="difficulty">Dificultad:</label>
+        <select id="difficulty">
+          <option value="any">Cualquier dificultad</option>
+          <option value="easy">Fácil</option>
+          <option value="medium">Medio</option>
+          <option value="hard">Difícil</option>
+        </select>
+      </div>
+      <div>
+        <label for="type">Tipo de respuesta:</label>
+        <select id="type">
+          <option value="any">Cualquier tipo</option>
+          <option value="multiple">Múltiple</option>
+          <option value="boolean">Verdadero/Falso</option>
+        </select>
+      </div>      
+      
+    <button id="generateBtn" class="btn waves-effect waves-light" type="button">Generar Trivia</button>
+    <div id="triviaContainer" style="display: none;">
+      <h3>Trivia</h3>
+      <div id="questionContainer"></div>
+      <button id="submitBtn" class="btn waves-effect waves-light" type="button">Enviar respuestas</button>
+      <div id="scoreContainer" style="display: none;">
+        <h4>Puntaje Final: <span id="score">0</span></h4>
+      </div>
+    </div>
+  </div>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>
